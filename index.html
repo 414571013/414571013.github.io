@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李錦星 - 個人主頁</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>李錦星 (414571013) 個人網頁</h1>
+    <p>前端基礎與 Git 版本控制作業展示</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>關於我</h2>
+      <p>歡迎來到我的 GitHub Personal Page！本網頁展示 HTML5、CSS、jQuery 以及 Ajax 技術結合的實作成果。</p>
+      <button id="toggle-bio-btn">展開 / 折疊詳細簡介</button>
+      <div id="bio-detail" style="display: none; margin-top: 15px;">
+        <p>目前正在學習軟體工程、前端網頁開發與程式設計知識，並透過 GitHub Pages 部署個人靜態網站。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>jQuery & Ajax 動態 JSON 資料擷取</h2>
+      <p>點擊下方按鈕，透過 Ajax 異步向測試 API 發送請求並即時渲染於畫面上：</p>
+      <button id="api-btn">擷取隨機數據</button>
+
+      <div id="api-result" style="display: none; margin-top: 15px;">
+        <p><strong>狀態：</strong><span id="api-status">載入中...</span></p>
+        <p><strong>標題：</strong><span id="api-title">-</span></p>
+        <p><strong>ID：</strong><span id="api-id">-</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 李錦星 (414571013). All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
